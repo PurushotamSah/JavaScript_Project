@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Changer</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 20px 100px;
+
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+
+        }
+        img{
+            width: 100%;
+            height: 800px;
+            margin: 0 auto;
+
+        }
+        p{
+          font-size: 18px;
+          text-align: justify;  
+
+        }
+        .btn{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: solid grey 2px;
+            border-radius:  50%;
+            cursor: pointer;
+        }
+        #white{
+            background-color: white;
+
+
+        }
+        #aqua{
+            background-color: aquamarine;
+
+        }
+        #violet{
+            background-color: violet;
+
+        }
+        #black{
+            background-color: black;
+
+        }
+        #color-switcher{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div id = "color-switcher">
+        <span class="btn" id ="white"  onclick="changeBG('#ffffff')"></span>
+        <span class="btn" id ="aqua"   onclick="changeBG('#7fffd4')"></span>
+        <span class="btn" id ="violet" onclick="changeBG('#ce9aff')"></span>
+        <span class="btn" id ="black"  onclick="changeBG('#000000')"></span>
+    </div>
+    <h1 class="text">About Us</h1>
+    <img src="img.jpg" alt="">
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ipsum incidunt hic quaerat enim pariatur dicta, nulla praesentium suscipit in, sint maxime voluptas, eaque cupiditate modi porro ad voluptate facilis sequi delectus similique minima tempora corporis. Veritatis nobis vitae nulla voluptatum obcaecati corporis velit exercitationem accusantium excepturi. Nulla nihil tempore veniam esse pariatur eveniet perferendis nobis, totam iusto voluptas autem porro impedit laudantium ducimus dolorum accusantium quisquam. Dicta perspiciatis fugiat omnis qui! Reiciendis, ab dolore suscipit dolores maiores praesentium recusandae quasi officia illo consequuntur, et totam fugiat placeat. Consequuntur mollitia quibusdam veniam voluptatibus nemo repudiandae, voluptate autem necessitatibus harum cumque nostrum iure rem similique illum magni non ullam, expedita dicta. Culpa quasi dicta error possimus vitae vel hic, molestiae dolor blanditiis debitis maiores aliquid sit architecto aspernatur atque fugiat dolorem reiciendis perspiciatis exercitationem nobis labore? Eveniet ipsam molestiae consequuntur id maxime officia in culpa cumque eos expedita numquam corrupti quasi assumenda voluptas possimus, eligendi, laudantium libero distinctio quas? Incidunt ipsum architecto error corrupti voluptatum sunt ipsa expedita hic alias exercitationem? Cupiditate autem id ratione facilis odit vitae numquam assumenda reiciendis omnis laudantium esse tempore labore nihil vero eveniet eligendi ipsa consequatur, corrupti dolorem sint minus. Consequatur fugiat harum totam hic obcaecati ipsa quae consectetur ex debitis nesciunt? Quaerat velit nihil modi nemo blanditiis excepturi tempore natus ratione, nisi repellendus dolorum error eaque odio ducimus nam fugit explicabo quae doloremque! Quae, deleniti quidem? Veniam hic recusandae qui incidunt porro nam ad, deserunt quaerat perspiciatis sapiente voluptates ducimus iusto fugit id corporis ut quae excepturi soluta at, voluptatem doloremque officia dolorem! Vitae iste, magnam, voluptatem sequi blanditiis quaerat laboriosam harum minus quisquam sapiente, quia velit iusto enim totam culpa adipisci. Possimus asperiores, tempore soluta eveniet illo officia molestias ea assumenda rem inventore magni facilis velit vero voluptate obcaecati sequi deleniti temporibus aut pariatur? Delectus neque, laboriosam perferendis aliquid sequi voluptatem architecto aspernatur veritatis eos eius nesciunt, sunt nisi, nulla quos odit voluptas. Culpa cumque possimus officia beatae, ipsum ipsa suscipit, similique impedit error, eaque animi. Atque fugiat porro sed sit neque vitae at id magnam eligendi error libero, odit ducimus architecto asperiores nostrum quam pariatur non. Animi exercitationem, ipsa impedit consequatur tenetur fugiat? Quia aperiam consectetur molestias magni ducimus eaque fugit assumenda velit autem reprehenderit nobis, sunt beatae debitis ipsum voluptatum repudiandae nam, tenetur dolore temporibus odio aut dicta deserunt quod fuga? Repellendus suscipit sequi quisquam quidem dolores totam, voluptatibus rerum omnis sint ex veniam fugit expedita consequatur magni odio ipsa eligendi! Quis repudiandae, amet, quibusdam, assumenda magni veniam quod laudantium corporis porro tenetur voluptas blanditiis facilis doloremque iusto vel velit sunt! Maxime hic provident voluptatum ex illum vitae iure deleniti a id voluptatem autem est officiis nihil, expedita ipsam enim? Iste dolorum sit dignissimos quaerat non vitae sed, illum distinctio iusto, quo praesentium maiores quis omnis, debitis nisi? Temporibus, aperiam voluptates aspernatur minima repellat sequi magni ipsa esse officiis mollitia quod atque quisquam ratione, accusamus earum, dolor iusto veritatis eos dolorem totam odit quidem inventore quia rerum. Enim qui consequatur magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis similique doloremque ipsam pariatur ratione optio exercitationem, non cupiditate nostrum est enim et consequatur qui quas saepe nam, maiores animi atque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe perspiciatis magnam enim voluptatibus totam provident, quisquam maxime tempore quaerat ab ad molestiae blanditiis sapiente ut ex? Dolore fugit veritatis in? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id temporibus sapiente unde nostrum rem optio, eius explicabo iste commodi voluptates, animi ut quos soluta quas enim inventore neque illum ea.
+
+    </p>
+    <script>
+    function changeBG(color){
+        document.body.style.backgroundColor=color;
+        let txt=document.getElementsByClassName("text");
+        if(color=="#000000"){
+            for(let elm of txt){
+                elm.style.color= "white";
+            }
+
+        } 
+        else{
+            for(let elm of txt){
+                elm.style.color="black";
+        }
+    }
+    }
+    </script>
+</body>
+</html>
